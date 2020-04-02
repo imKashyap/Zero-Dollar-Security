@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class CardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Container(alignment: Alignment.center,
       margin: EdgeInsets.symmetric(horizontal: 15.0),
       decoration: BoxDecoration(
           color: Colors.white,

@@ -13,6 +13,7 @@ dependencies:
   flare_flutter: ^2.0.1
   google_fonts: ^0.3.10
   qr_flutter: ^3.2.0
+  font_awesome_flutter: ^8.8.1
 
 dev_dependencies:
   flutter_test:
