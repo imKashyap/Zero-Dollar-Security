@@ -4,8 +4,8 @@ import 'package:zerodollarsecurity/screens/editProfileScreen/editProfileScreen.d
 import 'package:zerodollarsecurity/screens/homeScreen/home_screen.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/backend.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/frontend.dart';
-import 'package:zerodollarsecurity/screens/myAccount/widgets/cardView.dart';
-import 'package:zerodollarsecurity/screens/myAccount/widgets/detailView.dart';
+import 'package:zerodollarsecurity/screens/myAccountScreen/widgets/cardView.dart';
+import 'package:zerodollarsecurity/screens/myAccountScreen/widgets/detailView.dart';
 import '../../constants.dart';
 
 class MyAccountScreen extends StatelessWidget {

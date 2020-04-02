@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zerodollarsecurity/constants.dart';
-import 'package:zerodollarsecurity/screens/myAccount/my_account.dart';
-
+import 'package:zerodollarsecurity/screens/contactUsScreen/contactus_screen.dart';
+import 'package:zerodollarsecurity/screens/myAccountScreen/my_account.dart';
 import '../home_screen.dart';
 
 class SideDrawer extends StatefulWidget {
@@ -54,7 +54,7 @@ class _SideDrawerState extends State<SideDrawer> {
           ),
           InkWell(
             onTap: (){
-
+              Navigator.pushNamed(context, ContactUsScreen.id);
             },
             child:ListTile(
               leading:Icon(Icons.phone,

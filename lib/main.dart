@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:zerodollarsecurity/screens/contactUsScreen/contactus_screen.dart';
 import 'package:zerodollarsecurity/screens/editProfileScreen/editProfileScreen.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/home_screen.dart';
 import 'package:zerodollarsecurity/screens/loginScreen/login_screen.dart';
-import 'package:zerodollarsecurity/screens/myAccount/my_account.dart';
+import 'package:zerodollarsecurity/screens/myAccountScreen/my_account.dart';
 import 'package:zerodollarsecurity/screens/referralScreen/referral_screen.dart';
 import 'package:zerodollarsecurity/screens/signupScreen/signup_screen.dart';
-import 'package:zerodollarsecurity/screens/welcome_screen.dart';
+import 'package:zerodollarsecurity/screens/welcomeScreen/welcome_screen.dart';
 
 void main()=>runApp(MyApp());
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         ReferralScreen.id:(context)=>ReferralScreen(),
         MyAccountScreen.id:(context)=>MyAccountScreen(),
         EditProfileScreen.id:(context)=>EditProfileScreen(),
+        ContactUsScreen.id:(context)=>ContactUsScreen(),
       },
       debugShowCheckedModeBanner: false,
       title:'Zero Dollar Security',

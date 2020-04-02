@@ -1,6 +1,6 @@
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
-import 'loginScreen/login_screen.dart';
+import 'package:zerodollarsecurity/screens/loginScreen/login_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static String id = 'WelcomeScreen';
