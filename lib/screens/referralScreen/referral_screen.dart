@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:zerodollarsecurity/cmn_src/buildHeadBack.dart';
 import 'package:zerodollarsecurity/cmn_src/buildHeading.dart';
 import 'package:zerodollarsecurity/screens/referralScreen/widgets/buildReferralInput.dart';
 import 'package:zerodollarsecurity/screens/referralScreen/widgets/buildReferralSubmit.dart';
 import 'package:zerodollarsecurity/screens/referralScreen/widgets/infoText.dart';
-import '../../constants.dart';
 
 class ReferralScreen extends StatefulWidget {
   static String id = 'ReferralScreen';
