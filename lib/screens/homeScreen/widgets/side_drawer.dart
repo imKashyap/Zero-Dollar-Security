@@ -29,6 +29,9 @@ class _SideDrawerState extends State<SideDrawer> {
               fontWeight: FontWeight.bold,
             ),),
             currentAccountPicture: GestureDetector(
+              onTap: (){
+                Navigator.pushNamed(context,MyAccountScreen.id);
+              },
               child: CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('assets/profile.jpeg'),
@@ -42,7 +45,7 @@ class _SideDrawerState extends State<SideDrawer> {
             child:ListTile(
                 leading:Icon(Icons.person,
                     color: Colors.blue),
-                title:Text('Profile',
+                title:Text('My Profile',
                 style: kTextStyle.copyWith(
                     color: Colors.white,
                     fontWeight: FontWeight.bold

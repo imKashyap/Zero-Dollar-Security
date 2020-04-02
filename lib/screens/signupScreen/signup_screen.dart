@@ -20,50 +20,30 @@ class _SignUpScreenState extends State<SignUpScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Stack(
+      body: ListView(
         children: <Widget>[
-          HeadBack(),
-          ListView(
-            children: <Widget>[
-              Heading(),
-              SizedBox(
-                height: 20.0,
-              ),
-              Container(
-                height: 40.0,
-                //color:Colors.blue ,
-                child: Text(
-                  'SIGNUP',
-                  style: kTextStyle.copyWith(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20.0,
-                      color: Colors.black54),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              SizedBox(
-                height: 15.0,
-              ),
-              NameInput(),
-              SizedBox(
-                height: 10.0,
-              ),
-              EmailInput(),
-              SizedBox(
-                height: 10.0,
-              ),
-              PassInput(),
-              SizedBox(
-                height: 10.0,
-              ),
-              ConfirmPassInput(),
-              IsPassMatching(),
-              SizedBox(
-                height: 15.0,
-              ),
-              Submit(),
-            ],
+          Heading('SIGNUP'),
+          SizedBox(
+            height: 15.0,
           ),
+          NameInput(),
+          SizedBox(
+            height: 10.0,
+          ),
+          EmailInput(),
+          SizedBox(
+            height: 10.0,
+          ),
+          PassInput(),
+          SizedBox(
+            height: 10.0,
+          ),
+          ConfirmPassInput(),
+          IsPassMatching(),
+          SizedBox(
+            height: 15.0,
+          ),
+          Submit(),
         ],
       ),
     );

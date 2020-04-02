@@ -12,6 +12,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   flare_flutter: ^2.0.1
   google_fonts: ^0.3.10
+  qr_flutter: ^3.2.0
 
 dev_dependencies:
   flutter_test:

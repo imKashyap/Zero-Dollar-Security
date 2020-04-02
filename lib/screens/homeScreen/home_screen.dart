@@ -3,6 +3,7 @@ import 'package:zerodollarsecurity/screens/homeScreen/widgets/backend.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/card_view.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/detailView.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/frontend.dart';
+import 'package:zerodollarsecurity/screens/homeScreen/widgets/qrView.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/side_drawer.dart';
 import 'package:zerodollarsecurity/constants.dart';
 
@@ -28,6 +29,12 @@ class TopTheme extends StatefulWidget {
 }
 
 class _TopThemeState extends State<TopTheme> {
+  bool showQr=false;
+  String name='lorem ipsum';
+  String designation='DESIGNATION';
+  String idno='123456789';
+  String email='you@example.com';
+  String bottomText='QR';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +74,7 @@ class _TopThemeState extends State<TopTheme> {
                   SizedBox(
                     height: 10.0,
                   ),
-                  DetailView(),
+                  showQr?QRView(name, designation, idno, email):DetailView(name, designation, idno, email),
                 ],
               ),
               Column(
@@ -76,14 +83,17 @@ class _TopThemeState extends State<TopTheme> {
                 children: <Widget>[
                   GestureDetector(
                     onTap: () {
-                      print('working');
+                      setState(() {
+                        showQr=!showQr;
+                        bottomText=(bottomText=='Id')?'QR':'Id';
+                      });
                     },
                     child: Container(
                       height: 80.0,
                       color: Colors.blue[900],
                       child: Center(
                         child: Text(
-                          'Tap for QR',
+                          'Tap for $bottomText',
                           style: kTextStyle.copyWith(
                             color: Colors.white,
                             fontSize: 20.0,

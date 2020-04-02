@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:zerodollarsecurity/constants.dart';
 
 class DetailView extends StatefulWidget {
+  String name,designation,idno,email;
+  DetailView(String name,String designation,String idno,String email){
+    this.name=name;
+    this.designation=designation;
+    this.email=email;
+    this.idno=idno;
+  }
   @override
   _DetailViewState createState() => _DetailViewState();
 }
@@ -15,7 +22,7 @@ class _DetailViewState extends State<DetailView> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Text(
-            'lorem ipsum',
+            '${widget.name}',
             style: TextStyle(
               fontFamily: 'Pacifico',
               color: Colors.black,
@@ -23,7 +30,7 @@ class _DetailViewState extends State<DetailView> {
             ),
           ),
           Text(
-            'DESIGNATION',
+            '${widget.designation}',
             style: kTextStyle.copyWith(
               color: Colors.grey[600],
               letterSpacing: 3.0,
@@ -52,7 +59,7 @@ class _DetailViewState extends State<DetailView> {
                 ),
               ),
               Text(
-                '123456789',
+                '${widget.idno}',
                 style: kTextStyle.copyWith(
                   color: Colors.black,
                   fontSize: 20.0,
@@ -75,7 +82,7 @@ class _DetailViewState extends State<DetailView> {
                 ),
               ),
               Text(
-                'you@example.com',
+                '${widget.email}',
                 style: kTextStyle.copyWith(
                   color: Colors.black,
                   fontSize: 20.0,
