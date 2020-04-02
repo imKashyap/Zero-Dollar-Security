@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zerodollarsecurity/constants.dart';
+import 'package:zerodollarsecurity/screens/aboutZDSScreen/about_zds_screen.dart';
 import 'package:zerodollarsecurity/screens/contactUsScreen/contactus_screen.dart';
 import 'package:zerodollarsecurity/screens/myAccountScreen/my_account.dart';
 import '../home_screen.dart';
@@ -67,7 +68,7 @@ class _SideDrawerState extends State<SideDrawer> {
             ),
           ),
           InkWell(
-            onTap: (){},
+            onTap: (){ Navigator.pushNamed(context, AboutZDSScreen.id);},
             child:ListTile(
               leading:Icon(Icons.info_outline,
                   color: Colors.blue),

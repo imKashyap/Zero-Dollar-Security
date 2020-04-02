@@ -41,7 +41,7 @@ class TopTheme extends StatelessWidget {
               ),
               Expanded(
                 child: Center(
-                  child: CardView(),
+                  child: CardView(false),
                 ),
               ),
             ],
