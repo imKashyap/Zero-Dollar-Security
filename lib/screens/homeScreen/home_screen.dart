@@ -49,7 +49,7 @@ class _TopThemeState extends State<TopTheme> {
               ),
               Expanded(
                 child: Center(
-                  child: CardView(),
+                  child: CardView(false),
                 ),
               ),
             ],
