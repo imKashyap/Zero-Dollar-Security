@@ -80,30 +80,6 @@ class TopTheme extends StatelessWidget {
                         fontSize: 30.0,
                       ),
                     ),
-                    Container(
-                      height: 330.0,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          Text(
-                            'RAHUL KASHYAP',
-                            style: kTextStyle.copyWith(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20.0,
-                            ),
-                          ),
-                          Text(
-                            'MOHINI GUPTA',
-                            style: kTextStyle.copyWith(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20.0,
-                            ),
-                          ),
-                        ],
-                      ),
-                    )
                   ],
                 ),
               )

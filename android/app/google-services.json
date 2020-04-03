@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "105708046862",
+    "firebase_url": "https://zerodollarsecurityapp.firebaseio.com",
+    "project_id": "zerodollarsecurityapp",
+    "storage_bucket": "zerodollarsecurityapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105708046862:android:4d1dbc8c48f5a35e9fca5f",
+        "android_client_info": {
+          "package_name": "in_.zerodollarsecurity.zerodollarsecurity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105708046862-hgbd5t26s4m9dlvgeqnerb177ppj7mle.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgiqPRDonzFQOGTYqpUSj8J63SYRp3Rik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105708046862-hgbd5t26s4m9dlvgeqnerb177ppj7mle.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
