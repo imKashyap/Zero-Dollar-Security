@@ -3,6 +3,7 @@ import 'package:zerodollarsecurity/constants.dart';
 import 'package:zerodollarsecurity/screens/aboutZDSScreen/about_zds_screen.dart';
 import 'package:zerodollarsecurity/screens/contactUsScreen/contactus_screen.dart';
 import 'package:zerodollarsecurity/screens/myAccountScreen/my_account.dart';
+import 'package:zerodollarsecurity/screens/appInfo/appinfo_screen.dart';
 import '../home_screen.dart';
 
 class SideDrawer extends StatefulWidget {
@@ -95,7 +96,7 @@ class _SideDrawerState extends State<SideDrawer> {
           ),
           Divider(),
           InkWell(
-            onTap: (){},
+            onTap: (){Navigator.pushNamed(context, AppInfoScreen.id);},
             child:ListTile(
               leading:Icon(Icons.help,
                 color: Colors.blue,),
