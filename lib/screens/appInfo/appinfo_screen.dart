@@ -67,6 +67,30 @@ class TopTheme extends StatelessWidget {
               SizedBox(
                 height: 60.0,
               ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30.0),
+                child: Column(
+                  children: <Widget>[
+                    Text(
+                      'Version : 1.0',
+                      style: kTextStyle.copyWith(
+                        color: Colors.blue[900],
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30.0,
+                      ),
+                    ),
+                    Container(
+                      height: 330.0,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ],
