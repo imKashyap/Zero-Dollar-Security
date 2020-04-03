@@ -70,6 +70,7 @@ class TopTheme extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30.0),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
                     Text(
                       'Version : 1.0',
@@ -82,9 +83,24 @@ class TopTheme extends StatelessWidget {
                     Container(
                       height: 330.0,
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
-
+                          Text(
+                            'RAHUL KASHYAP',
+                            style: kTextStyle.copyWith(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20.0,
+                            ),
+                          ),
+                          Text(
+                            'MOHINI GUPTA',
+                            style: kTextStyle.copyWith(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20.0,
+                            ),
+                          ),
                         ],
                       ),
                     )
