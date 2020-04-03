@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/backend.dart';
@@ -83,6 +84,7 @@ class TopTheme extends StatelessWidget {
                       height: 330.0,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
                           contactInfo(
                               Icons.location_on,

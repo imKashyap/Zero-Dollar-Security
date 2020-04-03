@@ -59,8 +59,7 @@ class TopTheme extends StatelessWidget {
                   style: kTextStyle.copyWith(
                       fontWeight: FontWeight.bold,
                       fontSize: 20.0,
-                      color: Colors.black54
-                  ),
+                      color: Colors.black54),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -80,11 +79,39 @@ class TopTheme extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 330.0,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
-
+                          Container(
+                            height: 230.0,
+                            child: Image.asset(
+                              'assets/developer.png',
+                            ),
+                          ),
+                          Text(
+                            'Developer(s)',
+                            style: kTextStyle.copyWith(
+                              fontSize: 35.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5.0,
+                          ),
+                          Text(
+                            'Rahul Kashyap',
+                            style: kTextStyle.copyWith(
+                              fontSize: 18.0,
+                              color: Colors.black,
+                            ),
+                          ),
+                          Text(
+                            'Mohini Gupta',
+                            style: kTextStyle.copyWith(
+                              fontSize: 18.0,
+                              color: Colors.black,
+                            ),
+                          ),
                         ],
                       ),
                     )
