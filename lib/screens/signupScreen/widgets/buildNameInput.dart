@@ -8,6 +8,7 @@ class NameInput extends StatefulWidget {
 
 class _NameInputState extends State<NameInput> {
   _NameInputState();
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -26,6 +27,8 @@ class _NameInputState extends State<NameInput> {
             alignment: Alignment.centerLeft,
             height: 50.0,
             child: TextField(
+              onChanged: (value) {
+              },
               textAlignVertical: TextAlignVertical.center,
               decoration: InputDecoration(
                 prefixIcon: Icon(

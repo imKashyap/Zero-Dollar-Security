@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zerodollarsecurity/constants.dart';
 import 'package:zerodollarsecurity/screens/loginScreen/login_screen.dart';
+import 'package:zerodollarsecurity/screens/signupScreen/widgets/buildNameInput.dart';
 
 class Submit extends StatefulWidget {
   @override
@@ -8,6 +9,7 @@ class Submit extends StatefulWidget {
 }
 
 class _SubmitState extends State<Submit> {
+  NameInput nameInput= NameInput();
   @override
   Widget build(BuildContext context) {
     return Padding(

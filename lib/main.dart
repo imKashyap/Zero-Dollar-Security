@@ -9,7 +9,6 @@ import 'package:zerodollarsecurity/screens/myAccountScreen/my_account.dart';
 import 'package:zerodollarsecurity/screens/referralScreen/referral_screen.dart';
 import 'package:zerodollarsecurity/screens/signupScreen/signup_screen.dart';
 import 'package:zerodollarsecurity/screens/welcomeScreen/welcome_screen.dart';
-import 'package:zerodollarsecurity/screens/appInfo/appinfo_screen.dart';
 void main()=>runApp(MyApp());
 
 class MyApp extends StatelessWidget {
