@@ -3,7 +3,7 @@ import 'package:zerodollarsecurity/screens/homeScreen/widgets/backend.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/card_view.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/frontend.dart';
 import '../../constants.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 class AppInfoScreen extends StatelessWidget {
   static String id = 'AppInfoScreen';
   @override
@@ -83,7 +83,7 @@ class TopTheme extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
                           Container(
-                            height: 230.0,
+                            height: 200.0,
                             child: Image.asset(
                               'assets/developer.png',
                             ),
@@ -98,24 +98,26 @@ class TopTheme extends StatelessWidget {
                           SizedBox(
                             height: 5.0,
                           ),
-                          Text(
-                            'Rahul Kashyap',
-                            style: kTextStyle.copyWith(
-                              fontSize: 18.0,
-                              color: Colors.black,
-                            ),
+                          InkWell(
+                            child:Text('Rahul Kashyap',
+                                style: kTextStyle.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18.0,
+                                  color: Colors.black,)),
+                            onTap: () => launch('https://www.linkedin.com/in/rahul-kashyap-230577195'),
                           ),
-                          Text(
-                            'Mohini Gupta',
-                            style: kTextStyle.copyWith(
-                              fontSize: 18.0,
-                              color: Colors.black,
-                            ),
+                          InkWell(
+                            child:Text('Mohini Gupta',
+                                style: kTextStyle.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18.0,
+                                  color: Colors.black,)),
+                            onTap: () => launch('https://www.linkedin.com/in/mohini-gupta-54b63116b'),
                           ),
+
                         ],
                       ),
                     )
-
                   ],
                 ),
               )
