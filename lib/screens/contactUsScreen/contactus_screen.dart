@@ -5,7 +5,6 @@ import 'package:zerodollarsecurity/screens/homeScreen/widgets/backend.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/card_view.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/frontend.dart';
 import '../../constants.dart';
-
 class ContactUsScreen extends StatelessWidget {
   static String id = 'ContactUsScreen';
   @override

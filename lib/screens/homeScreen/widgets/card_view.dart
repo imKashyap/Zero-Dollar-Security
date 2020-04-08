@@ -1,13 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../../constants.dart';
-
+import 'package:flutter_linkify/flutter_linkify.dart';
+import 'package:url_launcher/url_launcher.dart';
 class CardView extends StatelessWidget {
   bool isAboutUs;
   CardView(bool isAboutUs) {
     this.isAboutUs = isAboutUs;
   }
+  String link ="https://www.zerodollarsecurity.in";
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -46,14 +47,22 @@ class CardView extends StatelessWidget {
                             color: Colors.black,
                           ),
                         ),
-                        Text(
-                          ' www.zerodollarsecurity.in',
-                          style: kTextStyle.copyWith(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15.0,
-                            color: Colors.blue,
-                          ),
-                        ),
+                    Linkify(
+                      onOpen: (link) async {
+                        if (await canLaunch(link.url)) {
+                          await launch(link.url);
+                        } else {
+                          throw 'Could not launch $link';
+                        }
+                      },
+                      text: 'https://www.zerodollarsecurity.in',
+                      style: kTextStyle.copyWith(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15.0,
+                        color: Colors.blue,
+                      ),
+                      linkStyle: TextStyle(color: Colors.blueAccent),
+                    ),
                       ],
                     ),
                   ),
