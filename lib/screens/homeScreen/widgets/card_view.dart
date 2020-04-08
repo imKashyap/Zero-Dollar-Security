@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../../constants.dart';
-import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
 class CardView extends StatelessWidget {
   bool isAboutUs;
@@ -47,21 +46,21 @@ class CardView extends StatelessWidget {
                             color: Colors.black,
                           ),
                         ),
-                        Linkify(
-                          onOpen: (link) async {
-                            if (await canLaunch(link.url)) {
-                              await launch(link.url);
-                            } else {
-                              throw 'Could not launch $link';
-                            }
-                          },
-                          text: 'https://www.zerodollarsecurity.in',
-                          style: kTextStyle.copyWith(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15.0,
-                            color: Colors.blue,
-                          ),
-                          linkStyle: TextStyle(color: Colors.blueAccent),
+                        InkWell(
+                          child:Text('Rahul Kashyap',
+                              style: kTextStyle.copyWith(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18.0,
+                                color: Colors.black,)),
+                          onTap: () => launch('https://www.linkedin.com/in/rahul-kashyap-230577195'),
+                        ),
+                        InkWell(
+                          child:Text('Mohini Gupta',
+                              style: kTextStyle.copyWith(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18.0,
+                                color: Colors.black,)),
+                          onTap: () => launch('https://www.linkedin.com/in/mohini-gupta-54b63116b'),
                         ),
                       ],
                     ),
