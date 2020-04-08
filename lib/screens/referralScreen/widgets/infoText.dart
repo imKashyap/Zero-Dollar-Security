@@ -17,7 +17,7 @@ class _InfoTextState extends State<InfoText> {
           children: <Widget>[
             RichText(
               text: TextSpan(
-                text: 'By tapping Submit, you agree to\nZero Dollar Security\'s',
+                text: 'By Signing in, you agree to\nZero Dollar Security\'s',
                 style: kTextStyle,
               ),
               textAlign: TextAlign.center,

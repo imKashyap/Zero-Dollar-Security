@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "105708046862",
-    "firebase_url": "https://zerodollarsecurityapp.firebaseio.com",
-    "project_id": "zerodollarsecurityapp",
-    "storage_bucket": "zerodollarsecurityapp.appspot.com"
+    "project_number": "155905384380",
+    "firebase_url": "https://zerodollarsecurity-app.firebaseio.com",
+    "project_id": "zerodollarsecurity-app",
+    "storage_bucket": "zerodollarsecurity-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:105708046862:android:4d1dbc8c48f5a35e9fca5f",
+        "mobilesdk_app_id": "1:155905384380:android:890421414d50fac8a615b9",
         "android_client_info": {
           "package_name": "in_.zerodollarsecurity.zerodollarsecurity"
         }
       },
       "oauth_client": [
         {
-          "client_id": "105708046862-hgbd5t26s4m9dlvgeqnerb177ppj7mle.apps.googleusercontent.com",
+          "client_id": "155905384380-or7v8ts9lne11328r1i3ua1q9n189bu0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in_.zerodollarsecurity.zerodollarsecurity",
+            "certificate_hash": "b64b610e0a82f1aff77f9e1aa158219f7b7c11ea"
+          }
+        },
+        {
+          "client_id": "155905384380-f84tlscp26or01uq85dt18d98pdn3t36.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBgiqPRDonzFQOGTYqpUSj8J63SYRp3Rik"
+          "current_key": "AIzaSyDoJ2gsmgO37I8Jn46WJXlFaTBPThcIDGE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "105708046862-hgbd5t26s4m9dlvgeqnerb177ppj7mle.apps.googleusercontent.com",
+              "client_id": "155905384380-f84tlscp26or01uq85dt18d98pdn3t36.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
