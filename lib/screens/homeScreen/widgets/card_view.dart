@@ -47,22 +47,22 @@ class CardView extends StatelessWidget {
                             color: Colors.black,
                           ),
                         ),
-                    Linkify(
-                      onOpen: (link) async {
-                        if (await canLaunch(link.url)) {
-                          await launch(link.url);
-                        } else {
-                          throw 'Could not launch $link';
-                        }
-                      },
-                      text: 'https://www.zerodollarsecurity.in',
-                      style: kTextStyle.copyWith(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15.0,
-                        color: Colors.blue,
-                      ),
-                      linkStyle: TextStyle(color: Colors.blueAccent),
-                    ),
+                        Linkify(
+                          onOpen: (link) async {
+                            if (await canLaunch(link.url)) {
+                              await launch(link.url);
+                            } else {
+                              throw 'Could not launch $link';
+                            }
+                          },
+                          text: 'https://www.zerodollarsecurity.in',
+                          style: kTextStyle.copyWith(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15.0,
+                            color: Colors.blue,
+                          ),
+                          linkStyle: TextStyle(color: Colors.blueAccent),
+                        ),
                       ],
                     ),
                   ),

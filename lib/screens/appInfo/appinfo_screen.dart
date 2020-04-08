@@ -99,12 +99,12 @@ class TopTheme extends StatelessWidget {
                             height: 5.0,
                           ),
                           InkWell(
-                              child:Text('Rahul Kashyap',
-                              style: kTextStyle.copyWith(
+                            child:Text('Rahul Kashyap',
+                                style: kTextStyle.copyWith(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18.0,
                                   color: Colors.black,)),
-                              onTap: () => launch('https://www.linkedin.com/in/rahul-kashyap-230577195'),
+                            onTap: () => launch('https://www.linkedin.com/in/rahul-kashyap-230577195'),
                           ),
                           InkWell(
                             child:Text('Mohini Gupta',
