@@ -19,46 +19,38 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   void initState() {
     super.initState();
-    googleSignIn.onCurrentUserChanged.listen((account){
+    googleSignIn.onCurrentUserChanged.listen((account) {
       print(account);
       handleSignIn(account);
     },
-    onError: (err){
-      print('Error signing in: $err' );
-    });
-    googleSignIn.signInSilently(suppressErrors: false).then((account){
+        onError: (err) {
+          print('Error signing in: $err');
+        });
+    googleSignIn.signInSilently(suppressErrors: false).then((account) {
       handleSignIn(account);
-    }).catchError((err){
-      print('Error signing in: $err' );
+    }).catchError((err) {
+      print('Error signing in: $err');
     });
   }
 
-  handleSignIn(GoogleSignInAccount account){
-    if(account!=null){
+  handleSignIn(GoogleSignInAccount account) {
+    if (account != null) {
       setState(() {
-        isAuth=true;
+        isAuth = true;
+        Navigator.push(context,MaterialPageRoute(
+          builder: (context)=>HomeScreen(googleSignIn.currentUser.displayName,googleSignIn.currentUser.email,googleSignIn.currentUser.photoUrl)
+        ));
       });
     }
-    else{
+    else {
       setState(() {
-        isAuth=false;
+        isAuth = false;
       });
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return isAuth?buildAuthScreen():buildUnauthScreen();
-  }
-  login(){
-    googleSignIn.signIn();
-  }
-
-  logout(){
-    googleSignIn.signOut();
-  }
-
-  Scaffold buildUnauthScreen() {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Column(
@@ -87,17 +79,26 @@ class _SignInScreenState extends State<SignInScreen> {
     );
   }
 
-Scaffold buildAuthScreen() {
-    return Scaffold(body: SafeArea(
-      child: Column(
-        children: <Widget>[
-          Text(googleSignIn.currentUser.displayName),
-          RaisedButton(
-              onPressed: logout,
-              child: Text('Logout')),
-        ],
-      ),
-    ));
+  login() {
+    googleSignIn.signIn();
+  }
+
+  logout() {
+    googleSignIn.signOut();
   }
 }
+
+//Scaffold buildAuthScreen() {
+//    return Scaffold(body: SafeArea(
+//      child: Column(
+//        children: <Widget>[
+//          Text(googleSignIn.currentUser.displayName),
+//          RaisedButton(
+//              onPressed: logout,
+//              child: Text('Logout')),
+//        ],
+//      ),
+//    ));
+//  }
+//}
 

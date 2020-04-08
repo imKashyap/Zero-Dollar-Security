@@ -81,11 +81,24 @@ class _DetailViewState extends State<DetailView> {
                     fontSize: 20.0
                 ),
               ),
-              Text(
-                '${widget.email}',
-                style: kTextStyle.copyWith(
-                  color: Colors.black,
-                  fontSize: 20.0,
+              Container(
+                child: Column(
+                  children: <Widget>[
+                    Text(widget.email.length>15?
+                      widget.email.substring(0,16):widget.email,
+                      style: kTextStyle.copyWith(
+                        color: Colors.black,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                    widget.email.length>15?Text(
+                      '${widget.email.substring(16)}',
+                      style: kTextStyle.copyWith(
+                        color: Colors.black,
+                        fontSize: 20.0,
+                      ),
+                    ):null,
+                  ],
                 ),
               ),
             ],

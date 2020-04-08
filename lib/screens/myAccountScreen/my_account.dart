@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zerodollarsecurity/screens/editProfileScreen/editProfileScreen.dart';
-import 'package:zerodollarsecurity/screens/homeScreen/home_screen.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/backend.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/frontend.dart';
 import 'package:zerodollarsecurity/screens/myAccountScreen/widgets/cardView.dart';
@@ -16,7 +15,7 @@ class MyAccountScreen extends StatelessWidget {
       appBar: AppBar(
         leading: GestureDetector(
           onTap: () {
-            Navigator.pushNamed(context, HomeScreen.id);
+            Navigator.pop(context);
           },
           child: Icon(
             Icons.arrow_back,

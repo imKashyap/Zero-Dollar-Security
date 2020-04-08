@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/backend.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/card_view.dart';
@@ -8,6 +9,8 @@ import 'package:zerodollarsecurity/screens/homeScreen/widgets/side_drawer.dart';
 import 'package:zerodollarsecurity/constants.dart';
 
 class HomeScreen extends StatelessWidget {
+  String name,email,photoUrl;
+  HomeScreen(this.name,this.email,this.photoUrl);
   static String id = 'HomeScreen';
   @override
   Widget build(BuildContext context) {
@@ -17,23 +20,25 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.blue[900],
       ),
       backgroundColor: Colors.black,
-      drawer: SideDrawer(),
-      body: TopTheme(),
+      drawer: SideDrawer(name, email,photoUrl),
+      body: TopTheme(name, email,photoUrl),
     );
   }
 }
 
 class TopTheme extends StatefulWidget {
+  String name;
+  String email;
+  String photoUrl;
+  TopTheme(this.name,this.email,this.photoUrl);
   @override
   _TopThemeState createState() => _TopThemeState();
 }
 
 class _TopThemeState extends State<TopTheme> {
   bool showQr=false;
-  String name='lorem ipsum';
-  String designation='DESIGNATION';
+  String designation='MEMBER';
   String idno='123456789';
-  String email='you@example.com';
   String bottomText='QR';
   @override
   Widget build(BuildContext context) {
@@ -66,7 +71,7 @@ class _TopThemeState extends State<TopTheme> {
                     child: CircleAvatar(
                       radius: 75.0,
                       backgroundColor: Colors.black,
-                      backgroundImage: AssetImage('assets/profile.jpeg'),
+                      backgroundImage: NetworkImage(widget.photoUrl),
                     ),
                     radius: 80.0,
                     backgroundColor: Colors.white,
@@ -74,7 +79,7 @@ class _TopThemeState extends State<TopTheme> {
                   SizedBox(
                     height: 10.0,
                   ),
-                  showQr?QRView(name, designation, idno, email):DetailView(name, designation, idno, email),
+                  showQr?QRView(widget.name, designation, idno, widget.email):DetailView(widget.name, designation, idno, widget.email),
                 ],
               ),
               Column(
