@@ -4,6 +4,7 @@ import 'package:zerodollarsecurity/screens/homeScreen/widgets/card_view.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/frontend.dart';
 import '../../constants.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 class AppInfoScreen extends StatelessWidget {
   static String id = 'AppInfoScreen';
   @override
