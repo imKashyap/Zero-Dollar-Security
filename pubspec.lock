@@ -153,15 +153,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
-  flutter_signin_button:
-    dependency: "direct main"
-    description:
-      name: flutter_signin_button
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
-=======
   flutter_linkify:
     dependency: "direct main"
     description:
@@ -169,7 +160,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.0"
->>>>>>> 3779fbb29ab7e06f9bb61564147c74dd400c235a
+  flutter_signin_button:
+    dependency: "direct main"
+    description:
+      name: flutter_signin_button
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
