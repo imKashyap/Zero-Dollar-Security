@@ -3,6 +3,7 @@ import 'package:zerodollarsecurity/screens/homeScreen/widgets/backend.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/card_view.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/frontend.dart';
 import '../../constants.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AppInfoScreen extends StatelessWidget {
@@ -97,35 +98,69 @@ class TopTheme extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            height: 5.0,
+                            height: 10.0,
                           ),
-                          InkWell(
-                            child:Text('Rahul Kashyap',
-                                style: kTextStyle.copyWith(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18.0,
-                                  color: Colors.black,)),
-                            onTap: () => launch('https://www.linkedin.com/in/rahul-kashyap-230577195'),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Text('Rahul Kashyap  ',
+                                    style: kTextStyle.copyWith(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20.0,
+                                      color: Colors.black,)),
+                              SizedBox(
+                                width: 5.0,
+                              ),
+                              InkWell(
+                              child:  Icon(FontAwesomeIcons.linkedin,color:Colors.blue,size:20),
+                             onTap: () => launch('https://www.linkedin.com/in/rahul-kashyap-230577195'),
+                             ),
+                              SizedBox(
+                                width: 3.0,
+                              ),
+                              InkWell(
+                                child:  Icon(FontAwesomeIcons.github,color:Colors.black,size:20),
+                                onTap: () => launch('https://github.com/imKashyap'),
+                              ),
+                            ],
                           ),
-                          InkWell(
-                            child:Text('Mohini Gupta',
-                                style: kTextStyle.copyWith(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18.0,
-                                  color: Colors.black,)),
-                            onTap: () => launch('https://www.linkedin.com/in/mohini-gupta-54b63116b'),
+                          SizedBox(
+                            height: 7.0,
                           ),
-
+                           Row(
+                             mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Text('Mohini Gupta  ',
+                                  style: kTextStyle.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
+                                    color: Colors.black,)),
+                              SizedBox(
+                                width: 5.0,
+                              ),
+                              InkWell(
+                                child:  Icon(FontAwesomeIcons.linkedin,color:Colors.blue,size:20),
+                                onTap: () => launch('https://www.linkedin.com/in/mohini-gupta-54b63116b'),
+                              ),
+                              SizedBox(
+                                width: 3.0,
+                              ),
+                              InkWell(
+                                child:  Icon(FontAwesomeIcons.github,color:Colors.black,size:20),
+                                onTap: () => launch('https://github.com/Mohinig'),
+                              ),
+                            ],
+                          ),
                         ],
+                          ),
+                        ),
+                        ],
+                        ),
                       ),
-                    )
+                    ],
+                    ),
                   ],
                 ),
-              )
-            ],
-          ),
-        ],
-      ),
-    );
+              );
   }
 }

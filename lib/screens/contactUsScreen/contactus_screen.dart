@@ -5,6 +5,8 @@ import 'package:zerodollarsecurity/screens/homeScreen/widgets/backend.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/card_view.dart';
 import 'package:zerodollarsecurity/screens/homeScreen/widgets/frontend.dart';
 import '../../constants.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 class ContactUsScreen extends StatelessWidget {
   static String id = 'ContactUsScreen';
   @override
@@ -99,18 +101,31 @@ class TopTheme extends StatelessWidget {
                               Icons.email,
                               'contactus@zerodollarsecurity.in',
                               Colors.redAccent),
-                          contactInfo(
-                                FontAwesomeIcons.facebookSquare,
-                              'https://www.facebook.com/\nzerodollars3curity/',
-                              Colors.blue),
-                          contactInfo(
-                              FontAwesomeIcons.instagram,
-                              'https://www.instagram.com/\nzerodollarsecurity/',
-                              Colors.purple),
-                          contactInfo(
-                              FontAwesomeIcons.linkedin,
-                              'https://www.linkedin.com/\ncompany/zero-dollar-security',
-                              Colors.blue),
+                          Text(
+                            'We are also available at',
+                            style: kTextStyle.copyWith(
+                              color: Colors.blue[900],
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20.0,
+                            ),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              InkWell(
+                                  child:  Icon(FontAwesomeIcons.facebookSquare,color:Colors.blue,size:40),
+                                  onTap: () => launch('https://www.facebook.com/zerodollars3curity')
+                              ),
+                              InkWell(
+                                  child:  Icon(FontAwesomeIcons.instagram,color:Colors.purple,size:40),
+                                  onTap: () => launch('https://www.instagram.com/zerodollarsecurity'),
+                              ),
+                              InkWell(
+                                  child:  Icon(FontAwesomeIcons.linkedin,color:Colors.blue,size:40),
+                                  onTap: () => launch('https://www.linkedin.com/company/zero-dollar-security')
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                     )
@@ -129,7 +144,7 @@ class TopTheme extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         Icon(icon, color: color,
-        size: 25.0,),
+        size: 30.0,),
         SizedBox(
           width: 15.0,
         ),
