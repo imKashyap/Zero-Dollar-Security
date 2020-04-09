@@ -79,12 +79,12 @@ class _SignInScreenState extends State<SignInScreen> {
     );
   }
 
-  login() {
-    googleSignIn.signIn();
+  login() async {
+    await googleSignIn.signIn();
   }
 
-  logout() {
-    googleSignIn.signOut();
+  logout() async {
+    await googleSignIn.signOut();
   }
 }
 
