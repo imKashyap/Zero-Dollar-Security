@@ -38,6 +38,7 @@ class Heading extends StatelessWidget {
                     child: Center(
                       child: Image.asset(
                         'assets/logo.png',
+                        //color: Colors.white,
                       ),
                     )),
               ),

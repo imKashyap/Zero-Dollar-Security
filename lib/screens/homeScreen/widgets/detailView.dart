@@ -97,7 +97,7 @@ class _DetailViewState extends State<DetailView> {
                         color: Colors.black,
                         fontSize: 20.0,
                       ),
-                    ):null,
+                    ):Text(''),
                   ],
                 ),
               ),

@@ -12,6 +12,7 @@ class CardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      //height: MediaQuery.of(context).size.height,
       alignment: Alignment.center,
       margin: EdgeInsets.symmetric(horizontal: 15.0),
       decoration: BoxDecoration(

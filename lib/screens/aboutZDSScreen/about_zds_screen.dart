@@ -40,7 +40,7 @@ class TopTheme extends StatelessWidget {
               ),
             ],
           ),
-          ListView(
+          Column(
             children: <Widget>[
               Frontend(),
               SizedBox(
@@ -62,7 +62,7 @@ class TopTheme extends StatelessWidget {
               SizedBox(
                 height: 60.0,
               ),
-              CardView(true),
+              Expanded(child: CardView(true)),
         ],
       ),
     ],

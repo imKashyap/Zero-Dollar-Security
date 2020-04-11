@@ -13,6 +13,7 @@ class Frontend extends StatelessWidget {
           padding: EdgeInsets.only(left: 100.0, right: 100.0),
           child: Center(
             child: Image.asset('assets/logo.png',
+            //color: Colors.white,
             width: 500.0,),
           ),
         ),
